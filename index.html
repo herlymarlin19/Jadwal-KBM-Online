@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jadwal KBM Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-grad shadow-sm">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img
+            src="./assest/img/smea.png"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-text-top" />
+          <b>PROJECT LSP</b>
+        </a>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <!-- Header Card -->
+      <div class="header-card bg-white rounded-4 mb-3">
+        <div class="header-line"></div>
+        <div
+          class="d-flex justify-content-between align-items-center p-3 header-flex">
+          <div>
+            <h6 class="header-title">JADWAL KBM KELAS XII TJKT 2</h6>
+            <div class="header-sub">
+              Semester Genap • Tahun Ajaran 2025/2026
+            </div>
+          </div>
+
+          <span class="header-badge px-3 py-2 rounded-pill"> KBM ONLINE </span>
+        </div>
+      </div>
+
+      <div class="jadwal-wrap rounded-4 p-3">
+        <ul
+          class="nav nav-pills jadwal-tabs gap-4 mb-3"
+          id="hariTabs"
+          role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active rounded-3 py-2"
+              id="tab-senin"
+              data-bs-toggle="tab"
+              data-bs-target="#pane-senin"
+              type="button"
+              role="tab"
+              aria-controls="pane-senin"
+              aria-selected="true">
+              SENIN
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link rounded-3 py-2"
+              id="tab-selasa"
+              data-bs-toggle="tab"
+              data-bs-target="#pane-selasa"
+              type="button"
+              role="tab"
+              aria-controls="pane-selasa"
+              aria-selected="false">
+              SELASA
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link rounded-3 py-2"
+              id="tab-rabu"
+              data-bs-toggle="tab"
+              data-bs-target="#pane-rabu"
+              type="button"
+              role="tab"
+              aria-controls="pane-rabu"
+              aria-selected="false">
+              RABU
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link rounded-3 py-2"
+              id="tab-kamis"
+              data-bs-toggle="tab"
+              data-bs-target="#pane-kamis"
+              type="button"
+              role="tab"
+              aria-controls="pane-kamis"
+              aria-selected="false">
+              KAMIS
+            </button>
+          </li>
+
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link rounded-3 py-2"
+              id="tab-jumat"
+              data-bs-toggle="tab"
+              data-bs-target="#pane-jumat"
+              type="button"
+              role="tab"
+              aria-controls="pane-jumat"
+              aria-selected="false">
+              JUMAT
+            </button>
+          </li>
+        </ul>
+
+        <div class="bg-white rounded-4 jadwal-panel">
+          <div class="tab-content" id="hariTabsContent">
+            <!-- Senin -->
+            <div
+              class="tab-pane fade show active"
+              id="pane-senin"
+              role="tabpanel"
+              aria-labelledby="tab-senin"
+              tabindex="0">
+              <div class="table-responsive">
+                <table
+                  class="table table-bordered table-hover align-middle mb-0 jadwal-table">
+                  <thead class="table-light">
+                    <tr>
+                      <th style="width: 90px">JAM</th>
+                      <th style="width: 220px">WAKTU</th>
+                      <th>GURU &amp; MAPEL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center fw-bold">1</td>
+                      <td class="tt">07.15 - 10.45</td>
+                      <td class="td-guru">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+                          <div class="fw-bold mb-1">PEMROGRAMAN (MP)</div>
+                          <img
+                            src="./assest/img/Avatar.jpg"
+                            alt="Guru"
+                            width="150"
+                            class="img-thumbnail" />
+                          <div class="guru-name mt-1 px-3 py-2">
+                            Riweldo H. Sayuna, S.T
+                          </div>
+                          <a
+                            href="#"
+                            class="btn btn-success btn-sm mt-2 btn-wa d-inline-flex align-items-center gap-2"
+                            data-wa="6282146848926"
+                            data-hari="SENIN"
+                            data-jam="1"
+                            data-waktu="07.15-10.45"
+                            data-mapel="PEMROGRAMAN (MP)"
+                            data-guru="Riweldo H. Sayuna, S.T">
+                            <i class="bi bi-whatsapp"></i>Hubungi
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center fw-bold">2</td>
+                      <td class="tt">10.45 - 15.15</td>
+                      <td class="td-guru">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+                          <div class="fw-bold mb-1">
+                            KONSENTRASI KEJURUAN TJKT
+                          </div>
+                          <img
+                            src="./assest/img/Avatar.jpg"
+                            alt="Guru"
+                            width="150"
+                            class="img-thumbnail" />
+                          <div class="guru-name mt-1 px-3 py-2">
+                            Petrus P. Atasoge, S.Kom
+                          </div>
+                          <a
+                            href="#"
+                            class="btn btn-success btn-sm mt-2 btn-wa d-inline-flex align-items-center gap-2"
+                            data-wa="6282146848926"
+                            data-hari="SENIN"
+                            data-jam="2"
+                            data-waktu="10.45-15.15"
+                            data-mapel="KONSENTRASI KEJURUAN TJKT"
+                            data-guru="Petrus P. Atasoge, S.Kom">
+                            <i class="bi bi-whatsapp"></i>Hubungi
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Selasa -->
+            <div
+              class="tab-pane fade show"
+              id="pane-selasa"
+              role="tabpanel"
+              aria-labelledby="tab-selasa"
+              tabindex="0">
+              <div class="table-responsive">
+                <table
+                  class="table table-bordered table-hover align-middle mb-0 jadwal-table">
+                  <thead class="table-light">
+                    <tr>
+                      <th style="width: 90px">JAM</th>
+                      <th style="width: 220px">WAKTU</th>
+                      <th>GURU &amp; MAPEL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center fw-bold">1</td>
+                      <td class="tt">07.15 - 08.35</td>
+                      <td class="td-guru">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+                          <div class="fw-bold mb-1">PPKn</div>
+                          <img
+                            src="./assest/img/Avatar2.jpg"
+                            alt="Guru"
+                            width="150"
+                            class="img-thumbnail" />
+                          <div class="guru-name mt-1 px-3 py-2">
+                            M. Sesilia Lina Keban, S.Pd
+                          </div>
+                          <a
+                            href="#"
+                            class="btn btn-success btn-sm mt-2 btn-wa d-inline-flex align-items-center gap-2"
+                            data-wa="6282146848926"
+                            data-hari="SELASA"
+                            data-jam="1"
+                            data-waktu="07.15-08.35"
+                            data-mapel="PPKn"
+                            data-guru="M. Sesilia Lina Keban, S.Pd">
+                            <i class="bi bi-whatsapp"></i>Hubungi
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center fw-bold">2</td>
+                      <td class="tt">08.35 - 11.25</td>
+                      <td class="td-guru">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+                          <div class="fw-bold mb-1">MATEMATIKA</div>
+                          <img
+                            src="./assest/img/Avatar.jpg"
+                            alt="Guru"
+                            width="150"
+                            class="img-thumbnail" />
+                          <div class="guru-name mt-1 px-3 py-2">
+                            Karolus Pi, S.Pd
+                          </div>
+                          <a
+                            href="#"
+                            class="btn btn-success btn-sm mt-2 btn-wa d-inline-flex align-items-center gap-2"
+                            data-wa="6282146848926"
+                            data-hari="SELASA"
+                            data-jam="2"
+                            data-waktu="08.35-11.25"
+                            data-mapel="MATEMATIKA"
+                            data-guru="Karolus Pi, S.Pd">
+                            <i class="bi bi-whatsapp"></i>Hubungi
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center fw-bold">3</td>
+                      <td class="tt">11.25 - 15.15</td>
+                      <td class="td-guru">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+                          <div class="fw-bold mb-1">
+                            KONSENTRASI KEJURUAN TJKT
+                          </div>
+                          <img
+                            src="./assest/img/Avatar.jpg"
+                            alt="Guru"
+                            width="150"
+                            class="img-thumbnail" />
+                          <div class="guru-name mt-1 px-3 py-2">
+                            Petrus P. Atasoge, S.Kom
+                          </div>
+                          <a
+                            href="#"
+                            class="btn btn-success btn-sm mt-2 btn-wa d-inline-flex align-items-center gap-2"
+                            data-wa="6282146848926"
+                            data-hari="SELASA"
+                            data-jam="3"
+                            data-waktu="11.25-15.15"
+                            data-mapel="KONSENTRASI KEJURUAN TJKT"
+                            data-guru="Petrus P. Atasoge, S.Kom">
+                            <i class="bi bi-whatsapp"></i>Hubungi
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Rabu -->
+            <div
+              class="tab-pane fade show"
+              id="pane-rabu"
+              role="tabpanel"
+              aria-labelledby="tab-rabu"
+              tabindex="0">
+              <div class="table-responsive">
+                <table
+                  class="table table-bordered table-hover align-middle mb-0 jadwal-table">
+                  <thead class="table-light">
+                    <tr>
+                      <th style="width: 90px">JAM</th>
+                      <th style="width: 220px">WAKTU</th>
+                      <th>GURU &amp; MAPEL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center fw-bold">1</td>
+                      <td class="tt">07.15 - 11.25</td>
+                      <td class="td-guru">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+                          <div class="fw-bold mb-1">
+                            KONSENTRASI KEJURUAN TJKT
+                          </div>
+                          <img
+                            src="./assest/img/Avatar.jpg"
+                            alt="Guru"
+                            width="150"
+                            class="img-thumbnail" />
+                          <div class="guru-name mt-1 px-3 py-2">
+                            Petrus P. Atasoge, S.Kom
+                          </div>
+                          <a
+                            href="#"
+                            class="btn btn-success btn-sm mt-2 btn-wa d-inline-flex align-items-center gap-2"
+                            data-wa="6282146848926"
+                            data-hari="RABU"
+                            data-jam="1"
+                            data-waktu="07.15-11.25"
+                            data-mapel="KONSENTRASI KEJURUAN TJKT"
+                            data-guru="Petrus P. Atasoge, S.Kom">
+                            <i class="bi bi-whatsapp"></i>Hubungi
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center fw-bold">2</td>
+                      <td class="tt">11.25 - 15.15</td>
+                      <td class="td-guru">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+                          <div class="fw-bold mb-1">
+                            KREATIFITAS, INOVASI & KEWIRAUSAHAAN
+                          </div>
+                          <img
+                            src="./assest/img/Avatar.jpg"
+                            alt="Guru"
+                            width="150"
+                            class="img-thumbnail" />
+                          <div class="guru-name mt-1 px-3 py-2">
+                            Frengki Lesiangi, S.ST, M.Par
+                          </div>
+                          <a
+                            href="#"
+                            class="btn btn-success btn-sm mt-2 btn-wa d-inline-flex align-items-center gap-2"
+                            data-wa="6282146848926"
+                            data-hari="RABU"
+                            data-jam="2"
+                            data-waktu="11.25-15.15"
+                            data-mapel="KREATIFITAS, INOVASI & KEWIRAUSAHAAN"
+                            data-guru="Frengki Lesiangi, S.ST, M.Par">
+                            <i class="bi bi-whatsapp"></i>Hubungi
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Kamis -->
+            <div
+              class="tab-pane fade show"
+              id="pane-kamis"
+              role="tabpanel"
+              aria-labelledby="tab-kamis"
+              tabindex="0">
+              <div class="table-responsive">
+                <table
+                  class="table table-bordered table-hover align-middle mb-0 jadwal-table">
+                  <thead class="table-light">
+                    <tr>
+                      <th style="width: 90px">JAM</th>
+                      <th style="width: 220px">WAKTU</th>
+                      <th>GURU &amp; MAPEL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center fw-bold">1</td>
+                      <td class="tt">07.15 - 10.45</td>
+                      <td class="td-guru">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+                          <div class="fw-bold mb-1">BAHASA INGGRIS</div>
+                          <img
+                            src="./assest/img/Avatar2.jpg"
+                            alt="Guru"
+                            width="150"
+                            class="img-thumbnail" />
+                          <div class="guru-name mt-1 px-3 py-2">
+                            Margaretha Bire, S.Pd
+                          </div>
+                          <a
+                            href="#"
+                            class="btn btn-success btn-sm mt-2 btn-wa d-inline-flex align-items-center gap-2"
+                            data-wa="6282146848926"
+                            data-hari="KAMIS"
+                            data-jam="1"
+                            data-waktu="07.15-10.45"
+                            data-mapel="BAHASA INGGRIS"
+                            data-guru="Margaretha Bire, S.Pd">
+                            <i class="bi bi-whatsapp"></i>Hubungi
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center fw-bold">2</td>
+                      <td class="tt">10.45 - 13.15</td>
+                      <td class="td-guru">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+                          <div class="fw-bold mb-1">
+                            PENDIDIKAN AGAMA & BUDI PEKERTI
+                          </div>
+                          <img
+                            src="./assest/img/Avatar2.jpg"
+                            alt="Guru"
+                            width="150"
+                            class="img-thumbnail" />
+                          <div class="guru-name mt-1 px-3 py-2">
+                            Norlina Mira Mangngi, S.Pd, M.Pd.K
+                          </div>
+                          <a
+                            href="#"
+                            class="btn btn-success btn-sm mt-2 btn-wa d-inline-flex align-items-center gap-2"
+                            data-wa="6282146848926"
+                            data-hari="KAMIS"
+                            data-jam="2"
+                            data-waktu="10.45-13.15"
+                            data-mapel="PENDIDIKAN AGAMA & BUDI PEKERTI"
+                            data-guru="Norlina Mira Mangngi, S.Pd, M.Pd.K">
+                            <i class="bi bi-whatsapp"></i>Hubungi
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td class="text-center fw-bold">3</td>
+                      <td class="tt">13.15 - 15.15</td>
+                      <td class="td-guru">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+                          <div class="fw-bold mb-1">BAHASA INDONESIA</div>
+                          <img
+                            src="./assest/img/Avatar.jpg"
+                            alt="Guru"
+                            width="150"
+                            class="img-thumbnail" />
+                          <div class="guru-name mt-1 px-3 py-2">
+                            Rico Anggih Utomo, S.Pd
+                          </div>
+                          <a
+                            href="#"
+                            class="btn btn-success btn-sm mt-2 btn-wa d-inline-flex align-items-center gap-2"
+                            data-wa="6282146848926"
+                            data-hari="KAMIS"
+                            data-jam="3"
+                            data-waktu="13.15-15.15"
+                            data-mapel="BAHASA INDONESIA"
+                            data-guru="Rico Anggih Utomo, S.Pd">
+                            <i class="bi bi-whatsapp"></i>Hubungi
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Jumat -->
+            <div
+              class="tab-pane fade show"
+              id="pane-jumat"
+              role="tabpanel"
+              aria-labelledby="tab-jumat"
+              tabindex="0">
+              <div class="table-responsive">
+                <table
+                  class="table table-bordered table-hover align-middle mb-0 jadwal-table">
+                  <thead class="table-light">
+                    <tr>
+                      <th style="width: 90px">JAM</th>
+                      <th style="width: 220px">WAKTU</th>
+                      <th>GURU &amp; MAPEL</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-center fw-bold">1</td>
+                      <td class="tt">07.15 - 12.05</td>
+                      <td class="td-guru">
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center gap-2 py-3 px-2">
+                          <div class="fw-bold mb-1">
+                            KONSENTRASI KEJURUAN TJKT
+                          </div>
+                          <img
+                            src="./assest/img/Avatar.jpg"
+                            alt="Guru"
+                            width="150"
+                            class="img-thumbnail" />
+                          <div class="guru-name mt-1 px-3 py-2">
+                            Petrus P. Atasoge, S.Kom
+                          </div>
+                          <a
+                            href="#"
+                            class="btn btn-success btn-sm mt-2 btn-wa d-inline-flex align-items-center gap-2"
+                            data-wa="6282146848926"
+                            data-hari="JUMAT"
+                            data-jam="1"
+                            data-waktu="07.15-12.05"
+                            data-mapel="KONSENTRASI KEJURUAN TJKT"
+                            data-guru="Petrus P. Atasoge, S.Kom">
+                            <i class="bi bi-whatsapp"></i>Hubungi
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer fixed-bottom">
+      <div class="container h-100">
+        <div
+          class="footer-inner h-100 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center gap-2">
+            <img
+              src="./assest/img/smea.png"
+              alt="Logo"
+              width="35"
+              height="35" />
+            <small class="footer-text mt-1 mt-md-0">PROJEK LSP</small>
+          </div>
+
+          <small class="footer-right mt-1 mt-md-0"
+            >© <span id="year"></span> All XII TJKT 2</small
+          >
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

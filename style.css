@@ -1,0 +1,184 @@
+body {
+  background: linear-gradient(135deg, #e2d9d9, #ebe0e0, #e2d7d7);
+  font-family: "Poppins", "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #1f2937;
+  padding-bottom: 70px;
+}
+
+/* Navbar */
+.navbar-grad {
+  background: linear-gradient(145deg, #1b40e6, #3485f0, #b106f5);
+}
+
+.brand-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  color: #fff;
+}
+
+/* Header Box */
+.header-badge {
+  background: linear-gradient(135deg, #1b40e6, #b106f5, #0615e4);
+  box-shadow:
+    0 4px 12px rgb(12, 110, 253, 0.45),
+    0 6px 18px rgb(160, 16, 200, 0.45);
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  color: #fff;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.header-card {
+  box-shadow:
+    0 4px 12px rgb(12, 110, 253, 0.45),
+    0 6px 18px rgb(160, 16, 200, 0.45);
+  overflow: hidden;
+}
+
+.header-line {
+  height: 6px;
+  background: linear-gradient(145deg, #1b40e6, #3485f0, #b106f5);
+}
+
+.header-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin: 0;
+  color: #0f172a;
+}
+
+.header-sub {
+  font-size: 13px;
+  color: #475569;
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    white-space: normal;
+    max-width: 100%;
+  }
+
+  .navbar-brand b {
+    font-size: 14px;
+    line-height: 1.2;
+    word-break: break-word;
+  }
+
+  .header-flex {
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .header-flex > div:first-child {
+    width: 100%;
+  }
+
+  .header-badge {
+    margin-left: 0;
+    margin-top: 8px;
+    align-self: flex-start;
+  }
+}
+
+.jadwal-wrap {
+  background: rgba(244, 247, 248, 0.46);
+}
+
+.jadwal-panel {
+  border: 1px solid rgba(186, 177, 177, 0.9);
+  overflow: hidden;
+}
+
+.jadwal-tabs .nav-link {
+  background: transparent !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #4f46e5;
+  border-radius: 8px;
+}
+
+.jadwal-tabs .nav-link.active {
+  background: linear-gradient(135deg, #2563eb, #7c3aed) !important;
+  color: #fff;
+}
+
+.tt {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.td-guru {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.jadwal-table th,
+.jadwal-table td {
+  border-color: rgba(126, 35, 35, 0.14);
+  font-size: 13px;
+  font-weight: 700;
+  color: #1e293b;
+  background: #fff;
+  text-align: center;
+}
+
+.guru-img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.guru-name {
+  font-family: "Montserrat", sans-serif;
+  background: #d6e0fa;
+  color: #1e3a8a;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(135deg, #1b40e6, #b106f5, #0615e4);
+  height: 50px;
+  z-index: 1030;
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.footer-text,
+.footer-right {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+@media (max-width: 576px) {
+  .jadwal-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+
+  .jadwal-tabs .nav-item {
+    flex: 1;
+  }
+
+  .jadwal-tabs .nav-link {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
